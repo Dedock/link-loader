@@ -1,15 +1,17 @@
 <template>
   <div class="container">
-    <h2>
+    <h2 class="heading">
       {{ $route.params.link }}
     </h2>
-    <ul>
-      <li
-        v-for="item in data"
-        :key="item.id">
-        {{ item.title }}
-      </li>
-    </ul>
+    <div>
+      <ul>
+        <li
+          v-for="item in data"
+          :key="item.id">
+          {{ item.title }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -32,5 +34,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.heading {
+  margin: 0 auto;
+}
 </style>

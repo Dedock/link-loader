@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const cssConfig = require('./config/css')
 
 module.exports = {
   mode: 'universal',
@@ -24,7 +25,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: cssConfig,
 
   /*
   ** Plugins to load before mounting the App
